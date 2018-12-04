@@ -205,7 +205,7 @@ udělali a **proč** (ne nutně písemně, ale při odevzdávání je třeba
 postup vysvětlit a to i několik týdnů po vykonání vašich změn).
 
 **Jak řezat STL soubory?** Jde to jistě i v OpenSCADu, ale to je zbytečně
-komplikované. Připravili jsme proto https://github.com/3DprintFIT/BI-3DT/blob/master/cs/meshmixer.md[krátký
+komplikované. Připravili jsme proto https://github.com/3DprintFIT/BI-3DT/blob/master/tutorials/meshmixer.adoc[krátký
 návod pro program MeshMixer], případně můžete využít Slic3r.
 
 **Nejde vám v Meshmixeru dobře alignovat?** Zkuste program
