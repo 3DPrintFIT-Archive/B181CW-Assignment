@@ -112,9 +112,9 @@ jednotlivých děr.
 Počítání úhlů děr nemusíte řešit. Stačí aby byly kolmé na úsečku mezi středy
 "velké a malé koule".
 
-Velikost díry je `holer` - `ratio`*`j`, kde `j` je index díry (indexujeme od 0).
+Velikost díry je `holer` - ``ratio``++*++``j``, kde `j` je index díry (indexujeme od 0).
 Například pro holes[i] == 3, je velikost první díry (nejblíže hlavní koule)
-rovna (`holer` - `ratio` \* 0), druhá (`holer` - `ratio` \* 1) a třetí a poslední
+rovna (`holer` - `ratio` +*+ 0), druhá (`holer` - `ratio` +*+ 1) a třetí a poslední
 (`holer` - `ratio` * 2).
 
 .Rozložení děr na špičce
@@ -284,9 +284,9 @@ Hodnocení dle následující tabulky:
 
 * Pouze za podpory vygenerované při slicování se strhávají body. Protože jsme v části slicing.
 
-*Pro ovládání tiskárny při odevzdávání potřebujete vlastní počítač se
+IMPORTANT: Pro ovládání tiskárny při odevzdávání potřebujete vlastní počítač se
 schopností připojit se na WiFi nebo kabelem do lokální sítě. Také
-potřebuje znát (umět dohledat) svou MAC adresu.*
+potřebuje znát (umět dohledat) svou MAC adresu.
 
 
 Hodnocení je rozděleno na 4 dílčí části. *Povinný v rámci části*
