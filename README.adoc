@@ -43,7 +43,7 @@ V programu OpenSCAD napište modul `star`, který vytvoří 3D model děrované 
 a bude mít následující rozhraní.
 
 ```cpp
-module star(holes=[], rmain=15, r1=10, r2=5, slen=35, holer=2.5, ratio=0.6,
+module star(holes=[], rmain=15, r1=10, r2=5, slen=35, holer=2.5, ratio=0.3,
 thick = 2.5) { ... }
 ```
 
@@ -58,7 +58,7 @@ koule a další se rovnoměrně rozloží po špičce v závislosti na parametru
 Číslo `rmain` je poloměr hlavní koule, že které jdou špičky hvězdy. Číslo `r1` je poloměr vnitřní koule
 špičky. Číslo `r2` je poloměr vnější koule špičky. Číslo `slen` je délka špičky
 mezi polomery vnitřní a vnější koule špičky. Číslo `holer` je poloměr díry v
-kouli. Číslo `ratio` je poměr změnšení děr při vytváření děr na špičce. Číslo
+kouli. Číslo `ratio` je konstanta, o kterou se změnšují díry na špičce. Číslo
 `thick` je šířka stěny hvězdy.
 Lepší představu pravděpodobně získáte z dalšího popisu a nákresů.
 
@@ -112,10 +112,10 @@ jednotlivých děr.
 Počítání úhlů děr nemusíte řešit. Stačí aby byly kolmé na úsečku mezi středy
 "velké a malé koule".
 
-Velikost díry je `holer` - ``ratio``++*++``j``, kde `j` je index díry (indexujeme od 0).
-Například pro holes[i] == 3, je velikost první díry (nejblíže hlavní koule)
-rovna (`holer` - `ratio` +*+ 0), druhá (`holer` - `ratio` +*+ 1) a třetí a poslední
-(`holer` - `ratio` * 2).
+Poloměr díry je `holer` - ``ratio``++*++``j``, kde `j` je index díry (indexujeme od 0).
+Například pro holes[i] == 3, je poloměr první díry (nejblíže hlavní koule)
+rovna (`holer` - `ratio` +*+ 0), druhý (`holer` - `ratio` +*+ 1), třetí
+(`holer` - `ratio` * 2) a tak dále.
 
 .Rozložení děr na špičce
 image::star_spike_holes_example.png[]
