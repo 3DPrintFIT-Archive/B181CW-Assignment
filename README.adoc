@@ -43,7 +43,7 @@ V programu OpenSCAD napište modul `star`, který vytvoří 3D model děrované 
 a bude mít následující rozhraní.
 
 ```cpp
-module star(holes=[], rmain=15, r1=10, r2=5, slen=35, holer=2.5, ratio=0.6,
+module star(holes=[], rmain=15, r1=10, r2=5, slen=35, holer=2.5, reduc=0.3,
 thick = 2.5) { ... }
 ```
 
@@ -58,7 +58,7 @@ koule a další se rovnoměrně rozloží po špičce v závislosti na parametru
 Číslo `rmain` je poloměr hlavní koule, že které jdou špičky hvězdy. Číslo `r1` je poloměr vnitřní koule
 špičky. Číslo `r2` je poloměr vnější koule špičky. Číslo `slen` je délka špičky
 mezi polomery vnitřní a vnější koule špičky. Číslo `holer` je poloměr díry v
-kouli. Číslo `ratio` je poměr změnšení děr při vytváření děr na špičce. Číslo
+kouli. Číslo `reduc` je konstanta, o kterou se změnšují díry na špičce. Číslo
 `thick` je šířka stěny hvězdy.
 Lepší představu pravděpodobně získáte z dalšího popisu a nákresů.
 
@@ -99,7 +99,9 @@ image::star_spike_example.png[]
  
 Třetí obrázek je trochu zajímavější. Ukazuje totiž, jak mají být rozložené
 díry ve špičce. Počet děr je dán i-tým prvkem v poli `holes[i]`. Na obrázku
-je znázorněno, jak by to vypadalo pro `holes[i] == 4`. Díry jsou rovnoměrně
+je znázorněno, jak by to vypadalo pro `holes[i] == 4`. 
+
+Díry jsou rovnoměrně
 rozložené podle počtu po celé špičce od hrany hlavní koule do středu
 "druhé koule" (s polomerem `r2`).
 
@@ -112,10 +114,10 @@ jednotlivých děr.
 Počítání úhlů děr nemusíte řešit. Stačí aby byly kolmé na úsečku mezi středy
 "velké a malé koule".
 
-Velikost díry je `holer` - ``ratio``++*++``j``, kde `j` je index díry (indexujeme od 0).
-Například pro holes[i] == 3, je velikost první díry (nejblíže hlavní koule)
-rovna (`holer` - `ratio` +*+ 0), druhá (`holer` - `ratio` +*+ 1) a třetí a poslední
-(`holer` - `ratio` * 2).
+Poloměr díry je `holer` - ``reduc``++*++``j``, kde `j` je index díry (indexujeme od 0).
+Například pro holes[i] == 3, je poloměr první díry (nejblíže hlavní koule)
+rovna (`holer` - `reduc` +*+ 0), druhý (`holer` - `reduc` +*+ 1), třetí
+(`holer` - `reduc` * 2) a tak dále.
 
 .Rozložení děr na špičce
 image::star_spike_holes_example.png[]
@@ -251,7 +253,7 @@ V repozitáři odevzdávejte:
 - Profil pro slicovací program, který jste použili
 - Případné další potřebné soubory
 
-Termín odevzdání na GitHub je 14.1.2019 (TODO termín) včetně (případně začátek
+Termín odevzdání na GitHub je 20.1.2019 včetně (případně začátek
 vašeho zápočtového termínu, pokud se tento koná dřív), tisknout můžete i
 potom. Možnost pozdního odevzdání: Za každý další započatý týden (byť o
 vteřinu) je z celkového hodnocení strženo 10 bodů. Pokud je celkový
@@ -259,7 +261,7 @@ součet menší než 0, je hodnocení za semestrální práci 0. V době započe
 termínu klasifikovaného zápočtu (tisk v laboratoři), již musí být
 odevzdáno na GitHub.
 
-Zkouškové končí 18.2.2019 (TODO), nemáme nic proti odevzdání a zápočtovým
+Zkouškové končí 16.2.2019, nemáme nic proti odevzdání a zápočtovým
 termínům i po tomto datu, ale je třeba se na tom explicitně domluvit a
 přijmout rizika z toho plynoucí.
 
