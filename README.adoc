@@ -239,7 +239,8 @@ se samozřejmě o promarněný pokus nejedná.
 
 == Odevzdání, hodnocení a termíny
 
-Odevzdává se na GitHub, TODO - odkaz
+Odevzdává se na GitHub, repozitář vytvoříte na odkazu https://classroom.github.com/a/LZ3xHcBU
+
 Veškeré slovní popisy uveďte přímo do README (či README.md apod.) v
 repozitáři. **Tentokrát nečekejte žádnou automatickou issue.**
 
@@ -285,6 +286,9 @@ Hodnocení dle následující tabulky:
 |===
 
 * Pouze za podpory vygenerované při slicování se strhávají body. Protože jsme v části slicing.
+
+NOTE: Podstatou semestrální práce není absolutní rigoróznost vašeho OpenSCAD řešení,
+k tomu slouží domácí úkol. Je třeba dodržet podstatu zadání a reagovat rozumně na parametry.
 
 IMPORTANT: Pro ovládání tiskárny při odevzdávání potřebujete vlastní počítač se
 schopností připojit se na WiFi nebo kabelem do lokální sítě. Také
