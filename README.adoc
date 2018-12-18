@@ -207,7 +207,7 @@ Pokud jste spíše fanoušci Blenderu, tak se dá s objekty manipulovat i tam.
 Zde je tedy
 https://www.youtube.com/watch?v=ndQTn8mCweA[návod na řezání] a 
 https://www.youtube.com/watch?v=0pfTDzAaXp4[návod na otočení
-objektu, aby ležel na desce]
+objektu, aby ležel na desce].
 
 
 **Nejde vám v Meshmixeru nebo Blenderu dobře alignovat?** Zkuste program
