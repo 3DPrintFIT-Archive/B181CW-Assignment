@@ -9,9 +9,6 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-WARNING: Toto je beta verze zadání práce. Drobné změny ještě mohou nastat.
-Nebudou to ale velké koncepční změny.
-
 == Intro
 To, že Vánoce znovu přicházejí víme už od půlky října podle větších obchodních
 domů. Samozřejmě, že i my se potřebujeme na přicházející svátky patřičně
@@ -239,6 +236,8 @@ se samozřejmě o promarněný pokus nejedná.
 
 == Odevzdání, hodnocení a termíny
 
+Toto je finální verze zadání. Případné opravy chyb v zadání budou opatřeny erratou a oznámeny studentům e-mailem.
+
 Odevzdává se na GitHub, repozitář vytvoříte na odkazu https://classroom.github.com/a/LZ3xHcBU
 
 Veškeré slovní popisy uveďte přímo do README (či README.md apod.) v
@@ -254,7 +253,9 @@ V repozitáři odevzdávejte:
 - Profil pro slicovací program, který jste použili
 - Případné další potřebné soubory
 
-Termín odevzdání na GitHub je 20.1.2019 včetně (případně začátek
+Pokud máte jakékoliv dotazy, či naleznete chyby, napište je prosím do [Issues](https://github.com/3DprintFIT/B181CW-Assignment/issues) v tomto repozitáři.
+
+Termín odevzdání na GitHub je **20.1.2019 včetně** (případně začátek
 vašeho zápočtového termínu, pokud se tento koná dřív), tisknout můžete i
 potom. Možnost pozdního odevzdání: Za každý další započatý týden (byť o
 vteřinu) je z celkového hodnocení strženo 10 bodů. Pokud je celkový
