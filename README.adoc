@@ -236,7 +236,7 @@ se samozřejmě o promarněný pokus nejedná.
 
 == Odevzdání, hodnocení a termíny
 
-Toto je finální verze zadání. Případné opravy chyb v zadání budou opatřeny erratou a oznámeny studentům e-mailem.
+Toto je RC verze zadání. Případné opravy chyb v zadání budou opatřeny erratou a oznámeny studentům e-mailem.
 
 Odevzdává se na GitHub, repozitář vytvoříte na odkazu https://classroom.github.com/a/LZ3xHcBU
 
